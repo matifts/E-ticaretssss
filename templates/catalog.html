@@ -1,0 +1,63 @@
+
+{% extends "base.html" %} 
+{% load staticfiles %}
+{% block site_wrapper %} 
+<div id="main"> 
+ <a href="#content" class="skip_link">Skip to main content</a> 
+ <div id="banner"> 
+ <div class="bannerIEPadder"> 
+ <div class="cart_box"> 
+ [link to cart here] 
+ </div> 
+ Modern products
+ </div> 
+ </div> 
+ <div id="navigation"> 
+ <div class="navIEPadder"> 
+ <!-- [navigation here]  -->
+
+<!-- {% for pro in products.all %}
+    <h2>{{ pro.name }}</h2>
+{% endfor %} -->
+
+
+</div> 
+ </div> 
+ <div id="middle"> 
+ <div id="sidebar"> 
+ <div class="sidebarIEPadder"> 
+ [search box here] 
+ <!-- {% for pro in products.all %}
+	  
+ <img src="{{ pro.image.url }}"  />
+
+{% endfor %} -->
+ <br /> 
+ <!-- [category listing here]  -->
+<!-- {% for cat in products.all %}
+    <h2>{{ cat.name }}</h2>
+    <p>{{ cat.image }}</p>
+    <br/>
+
+
+{% endfor %} -->
+
+
+ </div> 
+ </div> 
+ <div id="content"> 
+ <a name=”content”></a> 
+ <div class="contentIEPadder"> 
+ {% block content %}{% endblock %} 
+ </div> 
+ </div> 
+ </div> 
+ <div id="footer"> 
+ <div class="footerIEPadder"> 
+ [footer here] 
+
+ 
+ </div> 
+ </div> 
+</div> 
+{% endblock %} 
